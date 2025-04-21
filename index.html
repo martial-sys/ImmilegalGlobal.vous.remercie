@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1400667957768581');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-	<!-- Google Analytics 4 - Tracking achat -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-NZDBJMMCWT');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merci pour Votre Achat ! - Guide Immigration Canada Étape par Étape</title>
@@ -166,6 +141,32 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             margin-right: 10px;
         }
 
+         /* Styles spécifiques pour les boutons bonus */
+         .bonus-button {
+            display: inline-block;
+            background-color: #555; /* Couleur foncée pour distinguer */
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px; /* Espace entre les boutons bonus */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+         .bonus-button:hover {
+             background-color: #333;
+             transform: translateY(-2px);
+             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+         }
+
+         .bonus-button i {
+             margin-right: 8px;
+         }
+
+
         /* --- Section Bonus --- */
         .bonus-info-section {
              background-color: #fff9c4; /* Fond jaune pâle */
@@ -199,33 +200,8 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             margin-right: auto;
         }
 
-         .bonus-info-section ul {
-             list-style: none;
-             padding: 0;
+         .bonus-links-container {
              margin-top: 20px;
-             text-align: left;
-             max-width: 600px;
-             margin-left: auto;
-             margin-right: auto;
-         }
-         .bonus-info-section ul li {
-             font-size: 19px; /* Taille normale */
-             color: #333;
-             margin-bottom: 15px;
-             line-height: 1.6;
-             padding-left: 30px;
-             position: relative;
-         }
-         .bonus-info-section ul li i.fas {
-             color: #fbc02d; /* Jaune/Orange */
-             position: absolute;
-             left: 0;
-             top: 3px;
-             font-size: 20px;
-         }
-
-         .bonus-info-section .whatsapp-button {
-             margin-top: 20px; /* Espace au-dessus du bouton */
          }
 
 
@@ -311,8 +287,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
             text-align: center;
              margin-top: 0; /* Pas de marge au-dessus du footer */
         }
-
-        footer .container {
+	            footer .container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -416,7 +391,8 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
     </header>
 
     <section class="thank-you-section" data-aos="fade-up">
-        <div class="container">
+        
+<div class="container">
              <i class="fas fa-check-circle"></i>
             <h1>Félicitations ! Votre Achat est Confirmé.</h1>
             <p>Merci pour votre confiance ! Vous avez fait le premier pas important pour sécuriser et structurer votre projet d'immigration au Canada avec des informations fiables.</p>
@@ -427,26 +403,33 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
         <div class="container" data-aos="fade-up">
             <h2>Accédez Immédiatement à Votre Guide :</h2>
             <p>Votre guide "Immigration Canada Étape par Étape" est prêt à être téléchargé. Cliquez simplement sur le bouton ci-dessous pour récupérer votre version PDF, accessible sur tous vos appareils.</p>
-            <a href="[LIEN_DE_TELECHARGEMENT_DE_VOTRE_GUIDE_PDF]" class="download-button" data-aos="zoom-in" data-aos-delay="200">
+            <a href="https://u.pcloud.link/publink/show?code=XZmtXm5Z8EWGVHAEjfSJnyBKpxRM7mlyjsUy" class="download-button" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fas fa-download"></i> Télécharger Mon Guide Maintenant
             </a>
              <p style="margin-top: 20px; font-size: 15px; color: #777;">(Lien de téléchargement direct du fichier PDF)</p>
         </div>
+  
     </section>
 
     <section class="bonus-info-section">
          <div class="container" data-aos="fade-up">
              <h2>Vos Bonus Exclusifs Vous Attendent :</h2>
              <p>En tant qu'acquéreur du guide, vous bénéficiez de bonus précieux pour vous accompagner sur le long terme :</p>
-             <ul>
-                 <li><i class="fas fa-sync-alt"></i> <strong>Accès à Vie aux Mises à Jour :</strong> Vous recevrez automatiquement par email toutes les futures mises à jour importantes du guide si les procédures changent. Votre information sera toujours à jour sans effort de votre part.</li>
-                  <li><i class="fas fa-file-alt"></i> <strong>Modèles Optimisés de CV et Lettre de Motivation :</strong> Accédez à des modèles prêts à adapter pour vos candidatures, conçus pour les standards canadiens. Vous les trouverez dans le même dossier que votre guide téléchargé ou via un lien séparé (préciser si nécessaire).</li>
-                 <li><i class="fas fa-users"></i> <strong>Votre Place dans le Groupe Privé :</strong> Rejoignez notre communauté exclusive pour échanger avec d'autres membres, partager vos expériences et trouver soutien et motivation. Cliquez ci-dessous pour demander votre accès :</li>
-             </ul>
-             <a href="https://t.me/+FaDQIFJbfBthZDI8" class="whatsapp-Telegram" style="background-color: #555; /* Couleur différente pour distinguer du bouton WhatsApp support */" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-users"></i> Accéder au Groupe Privé
-             </a>
-             <p style="margin-top: 20px; font-size: 15px; color: #777;">(lien pour accéder au groupe Telegram)</p>
+             
+             <div class="bonus-links-container">
+                <a href="https://u.pcloud.link/publink/show?code=XZ4qXm5Z37HarRm0XW09OuzbndnKTQYUcA37" class="bonus-button" data-aos="zoom-in" data-aos-delay="200">
+                     <i class="fas fa-file-alt"></i> Télécharger Modèles CV + LM
+                </a>
+
+                <a href="https://t.me/+FaDQIFJbfBthZDI8" class="bonus-button" style="background-color: #007bff;" data-aos="zoom-in" data-aos-delay="300">
+                     <i class="fas fa-users"></i> Accéder au Groupe Privé
+                </a>
+             </div>
+
+             <p style="margin-top: 20px; font-size: 19px; color: #555;">
+                 ✅ <strong>Accès à Vie aux Mises à Jour :</strong>Vous recevrez automatiquement toutes les futures mises à jour importantes du guide par email. Aucune action requise !
+             </p>
+
          </div>
      </section>
 
@@ -455,12 +438,15 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
         <div class="container" data-aos="fade-up">
             <h2>Besoin d'Aide ou Une Question ?</h2>
             <p>Si vous avez la moindre question concernant votre achat, le téléchargement du guide, ou l'accès aux bonus, notre équipe est là pour vous aider rapidement.</p>
-            <p>Veuillez noter que **nous ne pouvons pas fournir de conseils personnalisés d'immigration**. Pour toute question sur votre situation spécifique, veuillez consulter les sites officiels du gouvernement ou un professionnel réglementé.</p>
+           
+ <p>Pour toute question sur votre situation spécifique, veuillez consulter les sites officiels du gouvernement. Nous sommes là pour vous aider.</p>
             <div class="contact-links">
                 <a href="mailto: capsverslecanada@gmail.com" class="contact-links email-link" data-aos="fade-right" data-aos-delay="200">
                     <i class="fas fa-envelope"></i> Envoyer un Email
                 </a>
-                <a href="https://wa.me/15794001062?text=Bonjour%2C%20je%20viens%20de%20votre %20page%20de%20remerciement%20du%20Guide %20Immigration%20Canada%20et%20j %27ai%20une%20question." class="contact-links whatsapp-link" target="_blank" data-aos="fade-left" data-aos-delay="200">
+     
+            <a href="https://wa.me/15794001062?text=Bonjour%2C%20je%20viens%20de%20votre %20page%20de%20remerciement%20du%20Guide %20Immigration%20Canada%20et%20j %27ai%20une%20question."
+ class="contact-links whatsapp-link" target="_blank" data-aos="fade-left" data-aos-delay="200">
                     <i class="fab fa-whatsapp"></i> Contacter par WhatsApp
                 </a>
             </div>
@@ -471,10 +457,11 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 
     <footer>
         <div class="container">
-            <p>&copy; <span id="current-year"></span> .Cap Vers le Canada Tous droits réservés.</p>
+            <p>&copy;
+ <span id="current-year"></span> .Cap Vers le Canada Tous droits réservés.</p>
             <div class="footer-links">
                 <a href="#">Conditions Générales de Vente</a> |
-                <a href="#">Politique de Confidentialité</a> |
+ <a href="#">Politique de Confidentialité</a> |
                 <a href="#">Mentions Légales</a>
             </div>
             <p class="contact-info">Email Support : capsverslecanada@gmail.com</p>
@@ -486,14 +473,13 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
         // Initialisation de AOS
         AOS.init({
             duration: 800,
-            once: true
+         
+    once: true
         });
-
-        // Script pour mettre à jour l'année dans le footer automatiquement
+ // Script pour mettre à jour l'année dans le footer automatiquement
         document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-        <!-- Meta Pixel Code -->
-<script>
+ </script>
+        <script>
   fbq('track', 'Purchase', {
     content_name: 'Guide Ultime Pour Immigrer Au Canada',
     content_ids: ['guide_immigration_canada'],
@@ -505,8 +491,7 @@ src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"
 /></noscript>
-<!-- End Meta Pixel Code -->
-	<script>
+<script>
   gtag('event', 'purchase', {
     transaction_id: 'TX-' + Date.now(), // Génère un ID simple pour la transaction
     affiliation: 'Page Guide Immigration',
