@@ -451,14 +451,28 @@
     document.getElementById('current-year').textContent = new Date().getFullYear();
 </script>
 <script>
-    fbq('track', 'Purchase', {
-        content_name: 'Pack Ultime Immigration Canada 2025', // Nom mis à jour
-        content_ids: ['pack_ultime_immigration_canada'], // ID mis à jour
-        content_type: 'product',
-        value: 8.42, // Assurez-vous que cette valeur est correcte et dynamique si possible
-        currency: 'USD' // Assurez-vous que cette devise est correcte
-    });
+// Vérifie si l'achat a déjà été suivi dans cette session
+if (!sessionStorage.getItem('fb_purchase_tracked_session')) {
+
+  // Si non suivi, déclenche l'événement Purchase
+  fbq('track', 'Purchase', {
+    content_name: 'Pack Ultime Immigration Canada 2025', 
+    content_ids: ['pack_ultime_immigration_canada'], 
+    content_type: 'product',
+    value: 8.42, // IMPORTANT: Vérifiez si cette valeur est toujours correcte
+    currency: 'USD' // IMPORTANT: Vérifiez si cette devise est toujours correcte
+  });
+
+  // Marque l'achat comme suivi pour cette session
+  sessionStorage.setItem('fb_purchase_tracked_session', 'true');
+
+  console.log('Événement Facebook Purchase envoyé pour cette session.');
+
+} else {
+  console.log('Événement Facebook Purchase DÉJÀ envoyé pour cette session.');
+}
 </script>
+    
 <noscript>
     <img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1400667957768581&ev=PageView&noscript=1"/> 
