@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '568194722620291');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=572408978658915&ev=PageView&noscript=1"
-    /></noscript>
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '568194722620291');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=568194722620291&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Merci pour Votre Achat! - Guide Ultime Immigration Canada</title>
+    <title>Merci ! Accédez à Votre Guide Ultime</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <style>
-        /* Styles globaux et resets */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
+        /* Styles de base tirés de la page de vente pour cohérence */
         body {
             font-family: 'Poppins', sans-serif;
             line-height: 1.6;
@@ -40,405 +34,354 @@
             background-color: #f8f8f8; /* Fond très légèrement grisé */
             color: #333; /* Couleur de texte principale */
             overflow-x: hidden; /* Empêche le débordement horizontal */
-            font-size: 19px; /* Taille du texte normal */
+            font-size: 18px; /* Taille du texte normal ajustée légèrement */
         }
-
         .container {
-            max-width: 900px; /* Conteneur légèrement plus petit pour la page de remerciement */
+            max-width: 900px; /* Largeur maximale légèrement réduite */
             margin: 0 auto; /* Centrer le conteneur */
             padding: 0 20px; /* Espacement intérieur */
         }
-
-        /* En-tête simple */
         .site-header {
             background-color: #ffffff;
             padding: 15px 0;
             border-bottom: 1px solid #e0e0e0;
         }
-
         .site-header .container {
             display: flex;
-            justify-content: center; /* Centrer le logo par défaut */
+            justify-content: center;
             align-items: center;
         }
-
-        .site-logo img {
+         .site-logo img {
             height: 50px; /* Ajustez selon votre logo */
             width: auto;
             max-width: 100%;
             display: block;
         }
-
-        /* Section Remerciement Principale */
-        .thank-you-section {
-            background-color: #e8f5e9; /* Fond vert pâle pour succès */
-            padding: 60px 0; /* Padding réduit légèrement */
+         h1, h2, h3 {
+            color: #003366; /* Bleu marine pour les titres */
             text-align: center;
         }
-
-        .thank-you-section h1 {
-            font-size: 38px;
-            color: #2e7d32; /* Vert pour le succès */
+         h1 {
+            font-size: 38px; /* Taille du titre ajustée */
             margin-bottom: 20px;
             line-height: 1.2;
         }
-
-        .thank-you-section p {
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 15px; /* Réduit */
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .thank-you-section i.fas { /* Icône check */
-            font-size: 60px;
-            color: #2e7d32;
-            margin-bottom: 20px;
-        }
-
-        /* Section Accès au Guide (Instructions Email) */
-        .access-section {
-            background-color: #ffffff;
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .access-section h2 {
-            font-size: 30px;
-            color: #003366; /* Bleu marine */
+        h2 {
+            font-size: 32px; /* Taille du titre de section ajustée */
             margin-bottom: 30px;
             position: relative;
             display: inline-block;
         }
-
-        .access-section h2::after {
-            content: '';
+         h2::after {
+            content: "";
             display: block;
-            width: 80px;
-            height: 4px;
-            background-color: #0056b3; /* Bleu */
-            margin: 10px auto 0;
-            border-radius: 2px;
+            width: 80px; /* Ligne plus courte */
+            height: 4px; /* Ligne plus fine */
+            background-color: #d9534f; /* Ligne rouge */
+            margin: 15px auto 0;
+            border-radius: 3px;
+        }
+         p {
+            margin-bottom: 20px;
+            line-height: 1.7; /* Espacement ajusté */
+        }
+         strong {
+            color: #003366; /* Bleu marine pour le texte important */
+        }
+         .text-center {
+            text-align: center;
+        }
+        .section-spacing {
+            padding: 50px 0; /* Espacement standard entre sections */
         }
 
-        .access-section p {
-            font-size: 19px; /* Taille normale */
-            color: #555;
-            margin-bottom: 15px; /* Espacement standard */
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+        /* Styles spécifiques à la page de remerciement - Nouvelle approche */
+        .thank-you-header {
+            background-color: #28a745; /* Fond vert pour un sentiment de succès */
+            color: white;
+            padding: 60px 0;
+            text-align: center;
         }
-
-        .access-section .email-instructions {
-            background-color: #e3f2fd; /* Fond bleu très clair pour l'instruction */
-            border: 1px solid #b3e5fc;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 20px; /* Ajusté */
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-            display: inline-block; /* Pour centrer le bloc */
-            text-align: left; /* Texte aligné à gauche dans le bloc */
+         .thank-you-header h1 {
+            color: white; /* Titre blanc */
+            margin-bottom: 10px;
         }
-
-        .access-section .email-instructions strong {
-            color: #003366; /* Bleu marine */
-        }
-
-        .access-section .email-instructions p {
-            margin-bottom: 10px; /* Espace entre paragraphes d'instructions */
-            font-size: 18px; /* Taille légèrement réduite */
-            color: #333;
-        }
-
-         .access-section .email-instructions p:last-child {
-             margin-bottom: 0; /* Pas de marge pour le dernier paragraphe DANS cette boîte */
+         .thank-you-header p {
+             color: rgba(255, 255, 255, 0.9); /* Texte légèrement transparent */
+             font-size: 20px;
+             margin-bottom: 0;
+         }
+         .thank-you-header .icon {
+            font-size: 60px;
+            color: white;
+            margin-bottom: 20px;
          }
 
-        .access-section .email-instructions i {
-            color: #0056b3; /* Bleu */
-            margin-right: 8px;
+        .email-access-section {
+            background-color: #fff3cd; /* Fond jaune pâle pour l'alerte email */
+            border-bottom: 5px solid #ffc107; /* Bordure inférieure jaune */
+            padding: 40px 0;
+            text-align: center;
+            color: #333;
         }
+         .email-access-section .container {
+             max-width: 700px; /* Conteneur plus étroit pour le focus */
+         }
+        .email-access-section h2 {
+             color: #856404; /* Couleur texte pour le titre de l'alerte */
+             margin-bottom: 20px;
+             font-size: 26px;
+             text-align: center;
+         }
+          .email-access-section h2::after {
+             display: none; /* Pas de ligne sous le titre alerte */
+          }
 
-        /* NOUVELLE BOITE D'ALERTE SPAM/PROMO */
-        .spam-warning-box {
-            background-color: #fff3cd; /* Fond jaune pâle alerte */
-            border: 1px solid #ffeeba; /* Bordure jaune */
-            color: #856404; /* Texte brun/jaune foncé */
-            padding: 20px;
+        .email-access-section .instructions-block {
+            background-color: #ffffff;
+            padding: 25px;
             border-radius: 8px;
-            margin-top: 25px; /* Espace après la boîte bleue */
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
             text-align: left;
-            font-size: 18px; /* Taille visible */
-            font-weight: 600; /* Mise en gras */
+             font-size: 17px;
         }
+         .email-access-section .instructions-block p {
+             margin-bottom: 15px;
+         }
 
-        .spam-warning-box i {
-             color: #ffa726; /* Icône orange/jaune */
-             margin-right: 10px;
-             font-size: 20px; /* Icône plus visible */
-        }
-        /* FIN NOUVELLE BOITE */
+        .email-access-section .instructions-block ul {
+             list-style: none;
+             padding: 0;
+             margin-top: 15px;
+         }
+         .email-access-section .instructions-block ul li {
+             margin-bottom: 12px;
+             padding-left: 30px;
+             position: relative;
+             line-height: 1.6;
+         }
+         .email-access-section .instructions-block ul li i.fas {
+             position: absolute;
+             left: 0;
+             top: 2px;
+             color: #ffc107; /* Icône jaune */
+             font-size: 20px;
+         }
+         .email-access-section .instructions-block .email-link {
+             display: block;
+             margin-top: 20px;
+             text-align: center;
+             font-size: 1.1em;
+             font-weight: bold;
+             color: #0056b3;
+             text-decoration: none;
+         }
+         .email-access-section .instructions-block .email-link:hover {
+             text-decoration: underline;
+         }
 
-        .access-section .support-note {
-            font-size: 16px;
-            color: #666;
-            margin-top: 25px; /* Espace après la boîte d'alerte */
-        }
-
-
-        /* Section Bonus */
-        .bonus-info-section {
-            background-color: #fff9c4; /* Fond jaune pâle */
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .bonus-info-section h2 {
-            font-size: 30px;
-            color: #fbc02d; /* Jaune/Orange */
-            margin-bottom: 30px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .bonus-info-section h2::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background-color: #fbc02d; /* Jaune/Orange */
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
-
-        .bonus-info-section p { /* Paragraphe intro bonus */
-            font-size: 19px; /* Taille normale */
-            color: #555;
-            margin-bottom: 25px; /* Espace avant les boutons */
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .bonus-links-container {
-            margin-top: 20px;
-            margin-bottom: 25px; /* Espace après les boutons */
-        }
-
-        .bonus-button {
-            display: inline-block;
-            background-color: #555; /* Couleur foncée pour distinguer */
-            color: white !important; /* Force la couleur du texte */
-            font-size: 18px;
-            font-weight: 600;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin: 10px; /* Espace entre les boutons bonus */
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .bonus-button:hover {
-            background-color: #333;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-            color: white !important; /* Maintient la couleur au survol */
-        }
-
-        .bonus-button i {
-            margin-right: 8px;
-        }
-
-        .bonus-info-section .bonus-note { /* Note sur les mises à jour */
-            font-size: 18px; /* Taille normale */
-            color: #555;
-            margin-top: 20px; /* Marge pour séparer des boutons */
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* Section Support */
-        .support-section {
-            background-color: #e3f2fd; /* Fond bleu pâle */
-            padding: 60px 0;
-            text-align: center;
-        }
-
-        .support-section h2 {
-            font-size: 30px;
-            color: #0288d1; /* Bleu clair */
-            margin-bottom: 30px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .support-section h2::after {
-            content: '';
-            display: block;
-            width: 80px;
-            height: 4px;
-            background-color: #0288d1; /* Bleu clair */
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
-
-        .support-section p {
-            font-size: 19px; /* Taille normale */
-            color: #555;
-            margin-bottom: 15px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .contact-links {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Espacement entre les liens */
-            flex-wrap: wrap; /* Permettre le passage à la ligne sur mobile */
-        }
-
-        .contact-links a {
-            display: inline-flex;
-            align-items: center;
-            font-size: 19px;
-            font-weight: 600;
-            text-decoration: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Added transitions */
-            border: 1px solid transparent; /* Base border */
-        }
-
-        .contact-links a i {
-            margin-right: 8px;
-            font-size: 22px;
-        }
-
-        .contact-links .email-link {
-            color: #0056b3; /* Bleu */
-            border: 1px solid #0056b3;
+        .key-benefits-section {
             background-color: #ffffff;
         }
-        .contact-links .email-link:hover {
-            background-color: #f0f0f0;
-            opacity: 0.9;
-            transform: translateY(-2px);
-        }
+         .key-benefits-section h2::after {
+            background-color: #0056b3; /* Ligne bleue */
+         }
+         .key-benefits-section .benefits-grid {
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+             gap: 30px;
+             margin-top: 40px;
+             text-align: left;
+         }
+         .key-benefits-section .benefit-item {
+             background-color: #e3f2fd; /* Fond bleu très clair */
+             padding: 20px;
+             border-radius: 8px;
+             border-left: 5px solid #0288d1; /* Bordure bleue claire */
+             font-size: 17px;
+             color: #333;
+             line-height: 1.6;
+         }
+          .key-benefits-section .benefit-item strong {
+             color: #003366;
+              display: block;
+              margin-bottom: 8px;
+              font-size: 18px;
+          }
+         .key-benefits-section .benefit-item i {
+             font-size: 24px;
+             color: #0288d1;
+             margin-right: 10px;
+             float: left; /* Aligne icône à gauche du texte */
+             margin-top: 3px;
+         }
 
-        .contact-links .whatsapp-link {
-            background-color: #25D366; /* Vert WhatsApp */
-            color: white;
-            border-color: #25D366;
-        }
-        .contact-links .whatsapp-link:hover {
-             background-color: #1DA851;
-             transform: translateY(-2px);
-        }
-
-        .support-section .support-clarification { /* Note de clarification sous les contacts */
+        /* NOUVEAU Footer Style */
+        .new-footer {
+            background-color: #e0e0e0; /* Fond gris clair */
+            color: #333; /* Texte sombre */
+            padding: 40px 0; /* Padding standard */
             font-size: 15px;
-            color: #777;
-            margin-top: 20px;
+            text-align: center; /* Centré par défaut pour le contenu */
         }
+         .new-footer .container {
+             display: flex; /* Utilise flexbox pour la structure */
+             flex-direction: column; /* Colonne par défaut sur mobile */
+             align-items: center; /* Centre les éléments flex verticalement par défaut */
+             gap: 20px; /* Espacement entre les éléments flexibles */
+         }
 
-        /* Pied de Page */
-        footer {
-            background-color: #212529; /* Fond sombre */
-            color: #adb5bd; /* Texte gris clair */
-            padding: 40px 0;
+         .new-footer .disclaimer-block,
+         .new-footer .copyright-block, /* Nouvelle classe pour le paragraphe copyright */
+         .new-footer .footer-links,
+         .new-footer .contact-info {
+             width: 100%; /* Prennent toute la largeur sur mobile */
+             text-align: center; /* Centré sur mobile */
+         }
+
+         .new-footer .disclaimer-block {
+             font-size: 12px;
+             color: #555;
+             border-bottom: 1px solid #ccc; /* Ligne de séparation plus claire */
+             padding-bottom: 15px;
+             margin-bottom: 0; /* Géré par le gap du flex container */
+         }
+
+         .new-footer .copyright-block {
+             /* Styles spécifiques si besoin, sinon styles du p parent */
+             font-size: 15px; /* Taille normale pour le copyright */
+             color: #333;
+             margin-bottom: 0; /* Géré par le gap */
+         }
+
+         .new-footer .footer-links {
+             margin-top: 0; /* Géré par le gap */
+             margin-bottom: 0; /* Géré par le gap */
+         }
+
+         .new-footer .footer-links a {
+             color: #0056b3; /* Bleu standard pour les liens */
+             text-decoration: none;
+             margin: 0 10px; /* Espacement entre les liens */
+             transition: color 0.3s ease;
+             font-size: 15px;
+         }
+         .new-footer .footer-links a:hover {
+             color: #003366; /* Bleu marine au survol */
+             text-decoration: underline;
+         }
+
+        .new-footer .contact-info {
             font-size: 15px;
-            text-align: center;
-            margin-top: 0; /* Pas de marge au-dessus du footer */
+            color: #333;
+            margin-top: 0; /* Géré par le gap */
         }
-
-        footer .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        footer p {
-            margin-bottom: 10px;
-        }
-
-        footer .footer-links a {
-            color: #adb5bd;
+        .new-footer .contact-info a {
+            color: #0056b3; /* Bleu standard pour l'email */
             text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
+            font-weight: bold;
+        }
+        .new-footer .contact-info a:hover {
+             text-decoration: underline;
         }
 
-        footer .footer-links a:hover {
-             color: #ffffff; /* Blanc au survol */
+        /* Responsivité pour le NOUVEAU Footer */
+        @media (min-width: 769px) { /* Appliquer le layout multi-colonne sur les écrans plus larges */
+             .new-footer .container {
+                 flex-direction: row; /* Disposition en ligne */
+                 justify-content: space-around; /* Espacement égal entre les éléments */
+                 align-items: flex-start; /* Alignement en haut */
+                 flex-wrap: wrap; /* Permet de passer à la ligne si l'espace est insuffisant */
+             }
+
+            .new-footer .disclaimer-block {
+                 width: 100%; /* Le disclaimer reste en haut sur toute la largeur */
+                 margin-bottom: 20px; /* Espacement après le disclaimer */
+             }
+
+            .new-footer .copyright-block,
+            .new-footer .footer-links,
+            .new-footer .contact-info {
+                 width: auto; /* Largeur automatique basée sur le contenu */
+                 flex-grow: 1; /* Permet aux éléments de prendre l'espace disponible */
+                 text-align: left; /* Aligner le texte à gauche dans chaque colonne */
+                 margin-bottom: 0; /* Réinitialiser la marge du gap */
+             }
+
+             .new-footer .copyright-block {
+                 max-width: 200px; /* Optionnel: limiter la largeur du bloc copyright */
+             }
+
+             .new-footer .footer-links {
+                 flex-basis: auto; /* La base flex est automatique */
+                 margin-left: 20px; /* Espacement entre les colonnes */
+                 margin-right: 20px;
+             }
+             .new-footer .footer-links a {
+                 display: block; /* Afficher les liens en bloc pour qu'ils s'empilent */
+                 margin: 5px 0; /* Espacement vertical entre les liens */
+             }
+
+             .new-footer .contact-info {
+                  max-width: 250px; /* Optionnel: limiter la largeur du bloc contact */
+             }
         }
 
-        footer .footer-links {
-            margin-bottom: 10px;
-        }
 
-        footer .contact-info {
-             font-size: 14px;
-             color: #adb5bd;
-             margin-top: 5px;
-        }
-
-
-        /* Responsivité */
+        /* Responsivité pour le reste de la page (ajustements mineurs si nécessaire) */
         @media (max-width: 768px) {
-            .thank-you-section { padding: 50px 0; }
-            .thank-you-section h1 { font-size: 32px; }
-            .thank-you-section p { font-size: 18px; }
-            .thank-you-section i.fas { font-size: 50px; }
-            .access-section h2, .bonus-info-section h2, .support-section h2 { font-size: 26px; margin-bottom: 25px; }
-            .access-section h2::after, .bonus-info-section h2::after, .support-section h2::after { width: 60px; height: 3px; margin-top: 8px; }
-            .access-section p, .bonus-info-section p, .support-section p, .bonus-info-section .bonus-note, .access-section .email-instructions p, .spam-warning-box { font-size: 17px; margin-bottom: 15px; } /* Ajusté taille warning box */
-            .access-section, .bonus-info-section, .support-section { padding: 50px 0; }
-            .bonus-button { font-size: 16px; padding: 8px 15px; margin: 8px; } /* Boutons bonus plus petits */
-            .contact-links { flex-direction: column; gap: 10px; align-items: center; }
-            .contact-links a { font-size: 17px; padding: 8px 12px; }
-            .contact-links a i { font-size: 20px; margin-right: 6px; }
-            footer { padding: 30px 0; font-size: 14px; }
-            footer p { margin-bottom: 8px; }
-            footer .footer-links { margin-bottom: 8px; }
-            footer .footer-links a { margin: 0 8px; }
-            footer .contact-info { font-size: 13px; }
+             body { font-size: 17px; }
+             .container { padding: 0 15px; }
+             .thank-you-header { padding: 40px 0; }
+             .thank-you-header h1 { font-size: 32px; }
+             .thank-you-header p { font-size: 18px; }
+             .thank-you-header .icon { font-size: 50px; }
+
+             .email-access-section { padding: 30px 0; }
+             .email-access-section h2 { font-size: 22px; margin-bottom: 15px; }
+             .email-access-section .instructions-block { padding: 20px; font-size: 16px; }
+             .email-access-section .instructions-block ul li { padding-left: 25px; margin-bottom: 10px; }
+             .email-access-section .instructions-block ul li i.fas { font-size: 18px; }
+
+             .section-spacing { padding: 40px 0; }
+             h2 { font-size: 28px; margin-bottom: 20px; }
+             h2::after { width: 70px; height: 3px; margin-top: 10px; }
+             p { font-size: 17px; margin-bottom: 15px; line-height: 1.7;}
+
+             .key-benefits-section .benefits-grid { gap: 20px; margin-top: 30px; }
+             .key-benefits-section .benefit-item { padding: 15px; font-size: 16px; }
+             .key-benefits-section .benefit-item strong { font-size: 17px; margin-bottom: 6px; }
+             .key-benefits-section .benefit-item i { font-size: 20px; margin-right: 8px; }
+
+
         }
 
         @media (max-width: 480px) {
-             body { font-size: 17px; } /* Augmentation légère base mobile */
-            .thank-you-section { padding: 40px 0; }
-            .thank-you-section h1 { font-size: 26px; }
-            .thank-you-section p { font-size: 17px; } /* Ajusté */
-            .thank-you-section i.fas { font-size: 40px; }
-            .access-section h2, .bonus-info-section h2, .support-section h2 { font-size: 22px; margin-bottom: 20px; }
-            .access-section h2::after, .bonus-info-section h2::after, .support-section h2::after { width: 50px; height: 3px; margin-top: 6px; }
-             .access-section p, .bonus-info-section p, .support-section p, .bonus-info-section .bonus-note, .access-section .email-instructions p, .spam-warning-box { font-size: 16px; margin-bottom: 10px; } /* Ajusté taille warning box */
-             .access-section, .bonus-info-section, .support-section { padding: 40px 0; }
-             .bonus-button { font-size: 15px; padding: 8px 12px; margin: 6px; }
-             .contact-links a { font-size: 16px; padding: 6px 10px; }
-             .contact-links a i { font-size: 18px; margin-right: 5px; }
-             footer { padding: 25px 0; font-size: 13px; }
-             footer p { margin-bottom: 6px; }
-             footer .footer-links { flex-direction: column; align-items: center; gap: 5px; margin-bottom: 10px; }
-             footer .footer-links a { margin: 0 5px; }
-             footer .contact-info { font-size: 12px; }
+             body { font-size: 16px; }
+             .container { padding: 0 10px; }
+             .thank-you-header { padding: 30px 0; }
+             .thank-you-header h1 { font-size: 26px; }
+             .thank-you-header p { font-size: 16px; }
+             .thank-you-header .icon { font-size: 40px; }
+
+             .email-access-section { padding: 20px 0; }
+             .email-access-section h2 { font-size: 20px; margin-bottom: 10px; }
+             .email-access-section .instructions-block { padding: 15px; font-size: 15px; }
+             .email-access-section .instructions-block ul li { padding-left: 20px; margin-bottom: 8px; line-height: 1.5;}
+             .email-access-section .instructions-block ul li i.fas { font-size: 16px; top: 3px;}
+             .email-access-section .instructions-block .email-link { font-size: 1em; margin-top: 15px;}
+
+             .section-spacing { padding: 30px 0; }
+             h2 { font-size: 24px; margin-bottom: 15px; }
+             h2::after { width: 60px; height: 3px; margin-top: 8px; }
+             p { font-size: 16px; margin-bottom: 15px; line-height: 1.6;}
+
+             .key-benefits-section .benefits-grid { gap: 15px; margin-top: 20px; }
+             .key-benefits-section .benefit-item { padding: 10px; font-size: 15px; }
+             .key-benefits-section .benefit-item strong { font-size: 16px; margin-bottom: 5px; }
+             .key-benefits-section .benefit-item i { font-size: 18px; margin-right: 6px; }
         }
-
-    </style>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -446,172 +389,142 @@
       gtag('config', 'G-NZDBJMMCWT'); // REMPLACEZ PAR VOTRE VRAI ID GA4
     </script>
 
+    </style>
 </head>
 <body>
-
     <header class="site-header">
         <div class="container">
             <div class="site-logo">
                  <img src="https://d1yei2z3i6k35z.cloudfront.net/11365804/67d37b8fe92b5_Monlogo.jpg" alt="Logo Cap Vers le Canada">
-             </div>
+            </div>
         </div>
     </header>
 
-    <section class="thank-you-section" data-aos="fade-up">
+    <section class="thank-you-header">
         <div class="container">
-             <i class="fas fa-check-circle"></i>
-             <h1>Félicitations et Merci !</h1>
-             <p>Votre achat du <strong>Pack Ultime Immigration Canada</strong> est confirmé. Vous venez de faire un pas décisif vers la maîtrise et la sécurisation de votre projet.</p>
+            <i class="fas fa-check-circle icon"></i>
+            <h1>Commande Confirmée !</h1>
+            <p>Vous avez fait un pas important pour sécuriser votre projet Canada.</p>
         </div>
     </section>
 
-    <section class="access-section">
-         <div class="container" data-aos="fade-up">
-             <h2><i class="fas fa-envelope-open-text"></i> Étape Suivante: Vérifiez Votre E-mail !</h2>
-             <p>L'accès à votre Pack Ultime (guides PDF, liens bonus) vous attend dans votre boîte de réception.</p>
+    <section class="email-access-section">
+        <div class="container">
+            <h2><i class="fas fa-envelope-open-text"></i> Votre Pack Complet Est Dans Votre Boîte Email !</h2>
+             <div class="instructions-block">
+                 <p>Votre accès au <strong>Guide Ultime Immigration Canada | Édition 2025</strong> et à tous vos bonus exclusifs vient d'être envoyé à l'adresse email que vous avez fournie lors de votre achat.</p>
 
-             <div class="email-instructions" data-aos="zoom-in" data-aos-delay="200">
-                 <p><i class="fas fa-paper-plane"></i> Nous venons de vous envoyer un <strong>e-mail de confirmation</strong> à l'adresse fournie lors de l'achat.</p>
-                 <p><i class="fas fa-link"></i> Cet e-mail contient le <strong>lien unique et sécurisé</strong> pour accéder à la plateforme où télécharger vos guides et bonus.</p>
+                 <p><strong>ACTION IMMÉDIATE TRÈS IMPORTANTE :</strong> Pour ne rien manquer et accéder tout de suite à votre guide, <strong>vérifiez votre boîte de réception PRINCIPALE</strong>. Si vous ne voyez pas l'email de "Cap Vers le Canada" après quelques minutes, regardez dans :</p>
+
+                 <ul>
+                     <li><i class="fas fa-folder"></i> Vos onglets <strong>"Promotions"</strong> ou "Social".</li>
+                     <li><i class="fas fa-ban"></i> Votre dossier <strong>"Spam"</strong>, "Courrier Indésirable" ou "Junk Mail".</li>
+                 </ul>
+
+                 <p>C'est crucial de vérifier ces dossiers, car les emails contenant des liens peuvent parfois y être classés. Si vous trouvez notre email, marquez-le comme "Non-spam" et ajoutez notre adresse à vos contacts pour ne plus avoir ce problème.</p>
+
+                 <p>L'email est déjà parti ! Recherchez l'expéditeur "Cap Vers le Canada".</p>
+
+                 <p class="text-center">
+                     <a href="mailto:contact@capverslecanada.com" class="email-link">Pas d'email après 15 min ? Contactez-nous ici.</a>
+                 </p>
+             </div>
+        </div>
+    </section>
+
+    <section class="key-benefits-section section-spacing">
+        <div class="container">
+            <h2>Votre Investissement Vous Donne Accès À :</h2>
+            <div class="benefits-grid">
+                 <div class="benefit-item">
+                     <i class="fas fa-book-reader"></i>
+                     <span>
+                         <strong>Le Guide Ultime 2025 (PDF)</strong><br>
+                         Votre chemin étape par étape basé sur les sources OFFICIELLES.
+                     </span>
                  </div>
-
-             <div class="spam-warning-box" data-aos="zoom-in" data-aos-delay="300">
-<p><i class="fas fa-exclamation-triangle"></i> <strong>TRÈS IMPORTANT :</strong> Si vous ne voyez pas l'e-mail d'ici quelques minutes, contrôlez <strong>IMPÉRATIVEMENT</strong> vos dossiers <strong>SPAM (Courrier Indésirable)</strong> et <strong>PROMOTIONS</strong> !</p>
-             <p class="support-note">Un problème pour retrouver l'e-mail ou accéder au contenu? Contactez notre support (coordonnées ci-dessous).</p>
-        </div>
-    </section>
-
-    <section class="bonus-info-section">
-         <div class="container" data-aos="fade-up">
-             <h2><i class="fas fa-gift" style="margin-right: 10px;"></i> Vos Bonus Exclusifs</h2>
-             <p>N'oubliez pas que votre Pack Ultime inclut ces ressources précieuses :</p>
-             <div class="bonus-links-container">
-                 <a href="https://u.pcloud.link/publink/show?code=XZDBJm5ZqNXRSQEP1KH1Fwdmf4YVCbYYLisX" class="bonus-button" data-aos="zoom-in" data-aos-delay="200" target="_blank">
-                     <i class="fas fa-file-alt"></i> Modèles CV + LM
-                 </a>
-                 <a href="https://t.me/+FaDQIFJbfBthZD18" class="bonus-button" style="background-color: #007bff;" data-aos="zoom-in" data-aos-delay="300" target="_blank">
-                     <i class="fab fa-telegram-plane"></i> Accéder au Groupe Privé </a>
-                 <a href="https://u.pcloud.link/publink/show?code=XZ8eJm5ZWSlyJi2cnKBnNSCOvo53g5peiJyV" class="bonus-button" style="background-color: #2e7d32;" data-aos="zoom-in" data-aos-delay="400" target="_blank">
-                     <i class="fas fa-book-reader"></i> Guide Bonus Précédent
-                 </a>
-             </div>
-             <p class="bonus-note">
-                <strong><i class="fas fa-sync-alt"></i> Accès aux Mises à Jour :</strong> Vous recevrez <strong>automatiquement par e-mail</strong> les liens vers les futures mises à jour majeures du Guide Ultime. Aucune action n'est requise de votre part!
-             </p>
-        </div>
-    </section>
-
-    <section class="support-section">
-         <div class="container" data-aos="fade-up">
-             <h2><i class="fas fa-headset" style="margin-right: 10px;"></i> Besoin d'Aide ?</h2>
-             <p>Si vous rencontrez le moindre souci pour accéder à votre achat (e-mail non reçu après vérification du spam, lien invalide, etc.), contactez notre équipe support :</p>
-             <div class="contact-links">
-                 <a href="mailto:capsverslecanada@gmail.com" class="contact-links email-link" data-aos="fade-right" data-aos-delay="200">
-                     <i class="fas fa-envelope"></i> Envoyer un Email
-                 </a>
-                 <a href="https://wa.me/15794001062?text=Bonjour%2C%20je%20viens%20de%20votre%20page%20de%20remerciement%20du%20Guide%20Immigration%20Canada%20et%20j%27ai%20une%20question..." class="contact-links whatsapp-link" target="_blank" data-aos="fade-left" data-aos-delay="200">
-                     <i class="fab fa-whatsapp"></i> Contacter par WhatsApp
-                 </a>
+                 <div class="benefit-item">
+                      <i class="fas fa-sync-alt"></i>
+                      <span>
+                          <strong>Mises À Jour Gratuites À Vie</strong><br>
+                          Restez toujours informé(e) des changements sans frais.
+                      </span>
+                 </div>
+                  <div class="benefit-item">
+                      <i class="fas fa-users"></i>
+                      <span>
+                          <strong>Groupe Privé d'Entraide</strong><br>
+                          Connectez-vous, soutenez-vous avec d'autres candidats.
+                      </span>
+                 </div>
+                  <div class="benefit-item">
+                      <i class="fas fa-file-alt"></i>
+                      <span>
+                          <strong>Modèles CV + Lettre Pro</strong><br>
+                          Adaptez vos candidatures aux standards canadiens.
+                      </span>
+                 </div>
+                  <div class="benefit-item">
+                      <i class="fas fa-gift"></i>
+                      <span>
+                          <strong>Bonus Guide Complémentaire</strong><br>
+                          Une ressource additionnelle pour plus de clarté.
+                      </span>
+                 </div>
+                  <div class="benefit-item">
+                      <i class="fas fa-heart"></i>
+                      <span>
+                          <strong>Tranquillité d'Esprit</strong><br>
+                          Avancez avec confiance, loin de la peur des arnaques.
+                      </span>
+                 </div>
             </div>
-            <p class="support-clarification">(Notre support concerne uniquement l'accès à votre achat. Pour des conseils sur votre dossier d'immigration, veuillez consulter les sources officielles ou un professionnel réglementé.)</p>
         </div>
     </section>
 
-    <footer>
-         <div class="container">
-             <p>&copy; <span id="current-year"></span> Cap Vers le Canada. Tous droits réservés.</p>
-             <div class="footer-links">
-                 <a href="#">Conditions Générales de Vente</a> |
-                 <a href="#">Politique de Confidentialité</a> |
-                 <a href="#">Mentions Légales</a>
-             </div>
-             <p style="font-size: 13px; color: #adb5bd; line-height: 1.5;">
-                 <strong>AVERTISSEMENT IMPORTANT:</strong> Ce guide et son contenu sont la propriété intellectuelle de Cap Vers le Canada et sont protégés par les lois sur le droit d'auteur. Ce produit est destiné à un usage personnel et informatif uniquement. Toute reproduction, distribution, revente ou partage non autorisé, en totalité ou en partie, est strictement interdit et passible de poursuites. Les informations fournies sont basées sur les sources officielles publiques au moment de la publication mais ne constituent pas un conseil juridique ou d'immigration personnalisé et ne garantissent aucun résultat spécifique en matière d'immigration. Pour un avis sur votre situation personnelle, veuillez consulter un professionnel réglementé.
-            </p>
-            <p class="contact-info">Support Client: capsverslecanada@gmail.com</p>
+    <footer class="new-footer" id="footer">
+        <div class="container">
+            <div class="disclaimer-block">
+                <p>
+                    <strong>Information importante :</strong> Le Guide Ultime vous fournit des informations et des outils basés sur les sources officielles pour éclairer et structurer votre projet Canada. Ce guide n'offre pas de conseil personnalisé et ne peut garantir l'obtention d'un visa ou d'un emploi. Le succès de votre démarche dépend de nombreux facteurs et des autorités canadiennes.
+                </p>
+            </div>
+             <p class="copyright-block">&copy; <span id="current-year-footer"></span> Cap Vers le Canada. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Conditions Générales de Vente</a> |
+                <a href="#">Politique de Confidentialité</a> |
+                <a href="#">Mentions Légales</a>
+            </div>
+            <p class="contact-info">Support Client : <a href="mailto:contact@capverslecanada.com"><strong>contact@capverslecanada.com</strong></a></p>
         </div>
-     </footer>
-
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     <script>
         AOS.init({
-            duration: 800, // Durée animation
-             once: true // Animation une seule fois
+            duration: 800, // Durée animation en ms
+             once: true // Animation une seule fois au défilement
         });
     </script>
+
     <script>
-        // Met à jour l'année dans le footer
-         document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-    <script>
-    // Script pour envoyer l'événement Purchase une seule fois par session
-    (function() {
-        // Vérifie si l'événement a déjà été envoyé dans cette session
-        if (!sessionStorage.getItem('purchase_event_sent_v1')) { // Clé unique pour cette version du script
-             console.log('Purchase event v1 not sent in this session. Sending now.');
-
-             // Facebook Pixel Purchase Event
-             try {
-                 // ATTENTION: Vérifiez et/ou rendez dynamiques les valeurs 'value' et 'currency' ci-dessous!
-                 if (typeof fbq === 'function') {
-                     fbq('track', 'Purchase', {
-                         content_name: 'Pack Ultime Immigration Canada 2025',
-                         content_ids: ['pack_ultime_immigration_canada_2025'],
-                         content_type: 'product',
-                         value: 7.90, // VALEUR À VÉRIFIER/DYNAMISER (ex: montant réel payé)
-                         currency: 'USD' // DEVISE À VÉRIFIER/DYNAMISER (ex: devise réelle de paiement)
-                     });
-                     console.log('FB Purchase event sent.');
-                 } else {
-                    console.warn('fbq function not found. FB Purchase event not sent.');
-                }
-             } catch (e) {
-                 console.error('Error sending FB Purchase event:', e);
-             }
-
-            // Google Analytics GA4 purchase Event
-            try {
-                // ATTENTION: Vérifiez et/ou rendez dynamiques les valeurs 'transaction_id', 'value', 'currency' et 'price' ci-dessous!
-                if (typeof gtag === 'function') {
-                    // Générer un ID de transaction unique à chaque fois qu'on envoie l'événement
-                     const transactionId = 'TX-' + Date.now() + '-' + Math.random().toString(36).substr(2, 9);
-                    gtag('event', 'purchase', {
-                        transaction_id: transactionId,
-                        affiliation: 'Cap Vers le Canada - Site Web',
-                        value: 7.90, // VALEUR TOTALE DE LA TRANSACTION À VÉRIFIER/DYNAMISER
-                        currency: 'USD', // DEVISE À VÉRIFIER/DYNAMISER
-                        tax: 0,
-                        shipping: 0,
-                        items: [{
-                             item_id: 'PACK-ULTIME-CANADA-2025',
-                            item_name: 'Pack Ultime Immigration Canada 2025',
-                            quantity: 1,
-                            price: 7.90 // PRIX DE L'ITEM À VÉRIFIER/DYNAMISER
-                        }]
-                    });
-                    console.log('GA4 Purchase event sent with transaction_id:', transactionId);
-                 } else {
-                     console.warn('gtag function not found. GA4 Purchase event not sent.');
-                 }
-            } catch (e) {
-                console.error('Error sending GA4 Purchase event:', e);
-            }
-
-            // Marquer l'événement comme envoyé pour cette session
-            try {
-                 sessionStorage.setItem('purchase_event_sent_v1', 'true'); // Clé unique
-                 console.log('Purchase event v1 marked as sent in sessionStorage.');
-             } catch (e) {
-                 console.error('Error setting sessionStorage item:', e);
-                 // Fallback simple pour navigateurs anciens/privés où sessionStorage peut échouer
-                 window._purchaseEventSent_v1 = true;
-             }
-
-        } else {
-            console.log('Purchase event v1 already sent in this session. Skipping.');
+         // Utilise l'ID correct de ta balise dans le footer
+         const yearSpanFooter = document.getElementById('current-year-footer');
+         if (yearSpanFooter) {
+            yearSpanFooter.textContent = new Date().getFullYear();
+         } else {
+            console.warn("Element with ID 'current-year-footer' not found. Check footer HTML ID.");
          }
-    })();
+         // Si tu as aussi un élément avec l'ID 'current-year', tu peux le mettre à jour ici aussi si besoin,
+         // mais idéalement n'aie qu'un seul élément pour l'année du footer.
+         const yearSpanGeneric = document.getElementById('current-year');
+         if (yearSpanGeneric && yearSpanGeneric !== yearSpanFooter) { // Évite de mettre à jour deux fois le même élément
+             yearSpanGeneric.textContent = new Date().getFullYear();
+         } else if (!yearSpanGeneric) {
+             console.warn("Element with ID 'current-year' not found.");
+         }
+
     </script>
 
-</body>
+    </body>
 </html>
