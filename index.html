@@ -1,21 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '568194722620291'); // REMPLACEZ PAR VOTRE VRAI ID PIXEL (doit être le même que la page de vente)
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=568194722620291&ev=PageView&noscript=1"
-    /></noscript>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merci ! Votre Guide ImmiLégal Global est en route !</title>
@@ -26,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    
     <style>
         /* Styles de base tirés de la page de vente pour cohérence */
         html, body {
@@ -42,11 +28,11 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif; /* Nouvelle typographie : Inter */
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            background-color: #F1FAEE; /* Fond Gris Clair de la palette "Clarté et Horizon" */
-            color: #1D3557; /* Couleur de texte principale : Bleu Marine Profond */
-            font-size: 19px; /* Taille du texte normal */
+            background-color: #F1FAEE;
+            color: #1D3557;
+            font-size: 19px; /* Taille de police de base du corps */
         }
 
         .container {
@@ -75,7 +61,7 @@
         }
 
         h1, h2, h3 {
-            color: #1D3557; /* Bleu Marine Profond pour les titres */
+            color: #1D3557;
             text-align: center;
         }
 
@@ -97,7 +83,7 @@
             display: block;
             width: 80px;
             height: 4px;
-            background-color: #A8DADC; /* Bleu Ciel Clair pour la ligne */
+            background-color: #A8DADC;
             margin: 15px auto 0;
             border-radius: 3px;
         }
@@ -108,7 +94,7 @@
         }
 
         strong {
-            color: #1D3557; /* Bleu Marine Profond pour le texte important */
+            color: #1D3557;
         }
 
         .text-center {
@@ -121,7 +107,7 @@
 
         /* Styles spécifiques à la page de remerciement */
         .thank-you-header {
-            background-color: #457B9D; /* Vert Menthe Doux pour un sentiment de succès */
+            background-color: #457B9D;
             color: white;
             padding: 60px 0;
             text-align: center;
@@ -144,84 +130,169 @@
             margin-bottom: 20px;
         }
 
-        .email-access-section {
-            background-color: #F1FAEE; /* Fond Gris Clair pour l'alerte email */
-            border-bottom: 5px solid #F4A261; /* Bordure inférieure Orange Doux */
+        /* Styles pour la nouvelle section "Confirmation d'Envoi Email" */
+        .email-access-confirmation {
+            background-color: #F1FAEE;
             padding: 40px 0;
-            text-align: center;
-            color: #1D3557; /* Texte Bleu Marine Profond */
         }
 
-        .email-access-section .container {
-            max-width: 700px;
-        }
-
-        .email-access-section h2 {
-            color: #1D3557; /* Couleur texte pour le titre de l'alerte : Bleu Marine Profond */
-            margin-bottom: 20px;
-            font-size: 26px;
-            text-align: center;
-        }
-
-        .email-access-section h2::after {
-            display: none; /* Pas de ligne sous le titre alerte */
-        }
-
-        .email-access-section .instructions-block {
+        .email-access-confirmation .email-sent-box {
             background-color: #ffffff;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            text-align: left;
-            font-size: 17px;
-            color: #333; /* Texte gris foncé pour la lisibilité */
-        }
-
-        .email-access-section .instructions-block p {
-            margin-bottom: 15px;
-        }
-
-        .email-access-section .instructions-block ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 15px;
-        }
-
-        .email-access-section .instructions-block ul li {
-            margin-bottom: 12px;
-            padding-left: 30px;
-            position: relative;
-            line-height: 1.6;
-        }
-
-        .email-access-section .instructions-block ul li i.fas {
-            position: absolute;
-            left: 0;
-            top: 2px;
-            color: #F4A261; /* Icône Orange Doux */
-            font-size: 20px;
-        }
-
-        .email-access-section .instructions-block .email-link {
-            display: block;
-            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 750px;
+            margin: 0 auto;
+            border-bottom: 5px solid #457B9D;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            font-size: 1.1em;
-            font-weight: bold;
-            color: #1D3557; /* Bleu Marine Profond pour le lien */
-            text-decoration: underline;
         }
 
-        .email-access-section .instructions-block .email-link:hover {
+        .email-access-confirmation .email-icon {
+            font-size: 50px;
+            color: #F4A261;
+            margin-bottom: 20px;
+        }
+
+        .email-access-confirmation h2 {
+            font-size: 1.8em;
+            color: #1D3557;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .email-access-confirmation h2::after {
+            display: none;
+        }
+
+        .email-access-confirmation p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+            max-width: 600px;
+        }
+
+        .email-access-confirmation strong {
+            color: #D8222B;
+        }
+
+        .email-access-confirmation .btn-email-support {
+            display: inline-block;
+            background-color: #F4A261;
+            color: #1D3557;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1em;
+            margin-top: 25px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .email-access-confirmation .btn-email-support:hover {
+            background-color: #E78C44;
+            transform: translateY(-2px);
+        }
+
+        /* Styles pour la FAQ (Amélioré par Gemini pour un rendu plus moderne/dynamique) */
+        .faq-section {
+            background-color: #F1FAEE;
+            padding: 50px 0;
+        }
+
+        .faq-section h2 {
+            color: #1D3557;
+            margin-bottom: 30px;
+        }
+
+        .faq-list {
+            max-width: 750px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            padding: 20px 30px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #E0E0E0;
+            margin-bottom: 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 18px 0;
+            font-weight: 600;
+            font-size: 1.3em; /* Augmenté: 1.3 * 19px = 24.7px */
+            color: #1D3557;
+            transition: color 0.3s ease;
+        }
+
+        .faq-question-header:hover {
+            color: #457B9D;
+        }
+
+        .faq-question-header .icon {
+            font-size: 1.15em; /* Augmenté: 1.15 * 19px = 21.85px */
+            color: #A8DADC;
+            margin-left: 15px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .faq-question-header.active .icon {
+            transform: rotate(45deg);
+            color: #457B9D;
+        }
+
+        .faq-answer-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+            padding: 0 0;
+        }
+
+        .faq-answer-content.open {
+            max-height: 1500px; /* Valeur très grande pour éviter la coupure */
+            padding: 0 0 15px 0;
+        }
+
+        .faq-answer-content p {
+            font-size: 1.15em; /* AUGMENTÉ SIGNIFICATIVEMENT: 1.15 * 19px = 21.85px */
+            color: #212121; /* NOIRCI pour une meilleure lisibilité */
+            line-height: 1.8; /* Aération améliorée */
+            margin-bottom: 18px; /* Espacement entre paragraphes augmenté */
+        }
+
+        .faq-answer-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-answer-content a {
+            color: #457B9D;
+            text-decoration: underline;
+            font-weight: 500;
+        }
+        .faq-answer-content a:hover {
             text-decoration: none;
         }
 
+        /* Styles pour la section "Votre Investissement Vous Donne Accès À" */
         .key-benefits-section {
             background-color: #ffffff;
         }
 
         .key-benefits-section h2::after {
-            background-color: #A8DADC; /* Ligne Bleu Ciel Clair */
+            background-color: #A8DADC;
         }
 
         .key-benefits-section .benefits-grid {
@@ -233,17 +304,17 @@
         }
 
         .key-benefits-section .benefit-item {
-            background-color: #F1FAEE; /* Fond Gris Clair */
+            background-color: #F1FAEE;
             padding: 20px;
             border-radius: 8px;
-            border-left: 5px solid #457B9D; /* Bordure Vert Menthe Doux */
+            border-left: 5px solid #457B9D;
             font-size: 17px;
             color: #333;
             line-height: 1.6;
         }
 
         .key-benefits-section .benefit-item strong {
-            color: #1D3557; /* Bleu Marine Profond */
+            color: #1D3557;
             display: block;
             margin-bottom: 8px;
             font-size: 18px;
@@ -251,16 +322,70 @@
 
         .key-benefits-section .benefit-item i {
             font-size: 24px;
-            color: #A8DADC; /* Bleu Ciel Clair */
+            color: #A8DADC;
             margin-right: 10px;
             float: left;
             margin-top: 3px;
         }
 
-        /* NOUVEAU Footer Style - Cohérence avec la page de vente */
+        /* Styles pour la nouvelle section "Prochaines Étapes" */
+        .next-steps-section {
+            background-color: #A8DADC;
+            padding: 40px 0;
+            text-align: center;
+            color: #1D3557;
+        }
+
+        .next-steps-section h3 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #1D3557;
+        }
+
+        .next-steps-section .steps-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .next-steps-section .step-item {
+            background-color: #ffffff;
+            padding: 20px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            flex: 1 1 calc(33% - 40px);
+            max-width: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .next-steps-section .step-item .step-icon {
+            font-size: 38px;
+            color: #F4A261;
+            margin-bottom: 15px;
+        }
+
+        .next-steps-section .step-item h4 {
+            font-size: 1.3em;
+            color: #1D3557;
+            margin-bottom: 10px;
+        }
+
+        .next-steps-section .step-item p {
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+
+        /* Footer Style */
         .new-footer {
-            background-color: #1D3557; /* Fond Bleu Marine Profond */
-            color: #A8DADC; /* Texte Bleu Ciel Clair */
+            background-color: #1D3557;
+            color: #A8DADC;
             padding: 40px 0;
             font-size: 15px;
             text-align: center;
@@ -284,15 +409,15 @@
 
         .new-footer .disclaimer-block {
             font-size: 12px;
-            color: #adb5bd; /* Gris clair pour le disclaimer */
-            border-bottom: 1px solid #e9ecef; /* Ligne de séparation plus claire */
+            color: #adb5bd;
+            border-bottom: 1px solid #e9ecef;
             padding-bottom: 15px;
             margin-bottom: 0;
         }
 
         .new-footer .copyright-block {
             font-size: 15px;
-            color: #A8DADC; /* Bleu Ciel Clair pour le copyright */
+            color: #A8DADC;
             margin-bottom: 0;
         }
 
@@ -302,7 +427,7 @@
         }
 
         .new-footer .footer-links a {
-            color: #A8DADC; /* Bleu Ciel Clair pour les liens */
+            color: #A8DADC;
             text-decoration: none;
             margin: 0 10px;
             transition: color 0.3s ease;
@@ -310,18 +435,17 @@
         }
 
         .new-footer .footer-links a:hover {
-            color: #ffffff; /* Blanc au survol */
+            color: #ffffff;
             text-decoration: underline;
         }
 
         .new-footer .contact-info {
             font-size: 15px;
-            color: #A8DADC; /* Bleu Ciel Clair pour le contact info */
+            color: #A8DADC;
             margin-top: 0;
         }
-
         .new-footer .contact-info a {
-            color: #A8DADC; /* Bleu Ciel Clair pour l'email */
+            color: #A8DADC;
             text-decoration: none;
             font-weight: bold;
         }
@@ -330,7 +454,7 @@
             text-decoration: underline;
         }
 
-        /* Responsivité pour le NOUVEAU Footer */
+        /* Responsivité pour le Footer */
         @media (min-width: 769px) {
             .new-footer .container {
                 flex-direction: row;
@@ -373,7 +497,7 @@
             }
         }
 
-        /* Responsivité pour le reste de la page (ajustements mineurs si nécessaire) */
+        /* Responsivité générale pour le reste de la page */
         @media (max-width: 768px) {
             body { font-size: 17px; }
             .container { padding: 0 15px; }
@@ -381,11 +505,23 @@
             .thank-you-header h1 { font-size: 32px; }
             .thank-you-header p { font-size: 18px; }
             .thank-you-header .icon {font-size: 50px; }
-            .email-access-section {padding: 30px 0; }
-            .email-access-section h2 {font-size: 22px; margin-bottom: 15px; }
-            .email-access-section .instructions-block { padding: 20px; font-size: 16px;}
-            .email-access-section .instructions-block ul li { padding-left: 25px; margin-bottom: 10px; }
-            .email-access-section .instructions-block ul li i.fas {font-size: 18px; }
+
+            .email-access-confirmation {padding: 30px 0; }
+            .email-access-confirmation h2 {font-size: 22px; margin-bottom: 15px; }
+            .email-access-confirmation .email-icon {font-size: 40px; }
+            .email-access-confirmation p {font-size: 1em; }
+            .email-access-confirmation .btn-email-support {font-size: 0.9em; padding: 10px 20px;}
+
+            /* AJUSTEMENTS RESPONSIVES POUR LA FAQ */
+            .faq-section {padding: 40px 0; }
+            .faq-section h2 {font-size: 28px; margin-bottom: 25px; }
+            .faq-list {padding: 15px 20px; }
+            .faq-question-header {font-size: 1.15em; padding: 15px 0; } /* Ajusté pour tablette */
+            .faq-question-header .icon {font-size: 1.05em; margin-left: 10px; }
+            .faq-answer-content.open { padding: 0 0 10px 0; }
+            .faq-answer-content p {font-size: 1.05em; margin-bottom: 12px;} /* Ajusté pour tablette */
+
+
             .section-spacing { padding: 40px 0; }
             h2 {font-size: 28px; margin-bottom: 20px; }
             h2::after { width: 70px; height: 3px; margin-top: 10px; }
@@ -394,11 +530,18 @@
             .key-benefits-section .benefit-item { padding: 15px; font-size: 16px; }
             .key-benefits-section .benefit-item strong {font-size: 17px; margin-bottom: 6px; }
             .key-benefits-section .benefit-item i { font-size: 20px; margin-right: 8px; }
-            footer { padding: 30px 0; font-size: 14px; }
-            footer p { margin-bottom: 8px; }
-            footer .footer-links a {margin: 0 8px; }
-            footer .footer-links {margin-bottom: 8px;}
-            footer .contact-info {font-size: 13px;}
+
+            .next-steps-section h3 {font-size: 24px; }
+            .next-steps-section .step-item {flex: 1 1 calc(50% - 20px); }
+            .next-steps-section .step-item .step-icon {font-size: 32px; }
+            .next-steps-section .step-item h4 {font-size: 1.2em; }
+            .next-steps-section .step-item p {font-size: 0.95em; }
+
+            .new-footer { padding: 30px 0; font-size: 14px; }
+            .new-footer p { margin-bottom: 8px; }
+            .new-footer .footer-links a {margin: 0 8px; }
+            .new-footer .footer-links {margin-bottom: 8px;}
+            .new-footer .contact-info {font-size: 13px;}
         }
         @media (max-width: 480px) {
             body {font-size: 16px;}
@@ -407,12 +550,22 @@
             .thank-you-header h1 {font-size: 26px; }
             .thank-you-header p { font-size: 16px; }
             .thank-you-header .icon {font-size: 40px; }
-            .email-access-section { padding: 20px 0; }
-            .email-access-section h2 {font-size: 20px; margin-bottom: 10px; }
-            .email-access-section .instructions-block { padding: 15px; font-size: 15px; }
-            .email-access-section .instructions-block ul li { padding-left: 20px; margin-bottom: 8px; line-height: 1.5;}
-            .email-access-section .instructions-block ul li i.fas {font-size: 16px; top: 3px;}
-            .email-access-section .instructions-block .email-link {font-size: 1em; margin-top: 15px;}
+
+            .email-access-confirmation { padding: 20px 0; }
+            .email-access-confirmation h2 {font-size: 20px; margin-bottom: 10px; }
+            .email-access-confirmation .email-icon {font-size: 35px; }
+            .email-access-confirmation p {font-size: 0.95em; }
+            .email-access-confirmation .btn-email-support {font-size: 0.85em; padding: 8px 15px;}
+
+            /* AJUSTEMENTS RESPONSIVES POUR LA FAQ */
+            .faq-section { padding: 30px 0; }
+            .faq-section h2 {font-size: 24px; margin-bottom: 20px; }
+            .faq-list { padding: 10px 15px; }
+            .faq-question-header {font-size: 1.05em; padding: 12px 0; } /* Ajusté pour mobile */
+            .faq-question-header .icon {font-size: 0.95em; margin-left: 8px; }
+            .faq-answer-content.open { padding: 0 0 8px 0; }
+            .faq-answer-content p {font-size: 1em; margin-bottom: 10px;} /* Ajusté pour mobile */
+
             .section-spacing {padding: 30px 0; }
             h2 {font-size: 24px; margin-bottom: 15px; }
             h2::after { width: 60px; height: 3px; margin-top: 8px; }
@@ -421,33 +574,54 @@
             .key-benefits-section .benefit-item { padding: 10px; font-size: 15px; }
             .key-benefits-section .benefit-item strong {font-size: 16px; margin-bottom: 5px; }
             .key-benefits-section .benefit-item i {font-size: 18px; margin-right: 6px; }
-            footer { padding: 25px 0; font-size: 13px;}
-            footer p { margin-bottom: 6px;}
-            footer .footer-links {flex-direction: column; align-items: center; gap: 5px; margin-bottom: 10px;}
-            footer .footer-links a {margin: 0 5px;}
-            footer .contact-info {font-size: 12px;}
+
+            .next-steps-section .step-item {flex: 1 1 100%; max-width: 90%; }
+
+            .new-footer { padding: 25px 0; font-size: 13px;}
+            .new-footer p { margin-bottom: 6px;}
+            .new-footer .footer-links {flex-direction: column; align-items: center; gap: 5px; margin-bottom: 10px;}
+            .new-footer .footer-links a {margin: 0 5px;}
+            .new-footer .contact-info {font-size: 12px;}
         }
         /* Correction pour assurer la visibilité de l'adresse email dans le pied de page */
-.new-footer .contact-info a strong {
-    color: #FFFFFF !important; /* Blanc pur pour un contraste maximal et forcé */
-}
-.new-footer .contact-info a:hover strong {
-    color: #A8DADC !important; /* Bleu Ciel Clair au survol, forcé */
-}
-/* Correction pour assurer la visibilité de "Information importante :" dans le disclaimer du pied de page */
-.new-footer .disclaimer-block p strong {
-    color: #FFFFFF !important; /* Blanc pur pour un contraste maximal et forcé */
-}
-
-
-    </style>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script>
+        .new-footer .contact-info a strong {
+            color: #FFFFFF !important;
+        }
+        .new-footer .contact-info a:hover strong {
+            color: #A8DADC !important;
+        }
+        /* Correction pour assurer la visibilité de "Information importante :" dans le disclaimer du pied de page */
+        .new-footer .disclaimer-block p strong {
+            color: #FFFFFF !important;
+        }
+</style>
+<!-- Meta Pixel Code (Facebook) -->
+  <script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '593994983739023');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=593994983739023&ev=PageView&noscript=1"
+/></noscript>
+<!-- Fin Meta Pixel -->
+	
+ <!-- Google Analytics (GA4) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NZDBJMMCWT"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-NZDBJMMCWT'); // REMPLACEZ PAR VOTRE VRAI ID GA4 (doit être le même que la page de vente)
+        gtag('config', 'G-NZDBJMMCWT');
     </script>
+    
 </head>
 <body>
     <header class="site-header">
@@ -466,21 +640,94 @@
         </div>
     </section>
 
-    <section class="email-access-section">
+    <section class="email-access-confirmation section-spacing">
+        <div class="container text-center">
+            <div class="email-sent-box">
+                <i class="fas fa-paper-plane email-icon"></i>
+                <h2>Votre accès au guide et votre reçu ont été envoyés par email !</h2>
+                <p>Veuillez vérifier votre boîte de réception <strong>principale</strong>.</p>
+                <p>N'oubliez pas de consulter vos dossiers <strong>"Promotions", "Social" ou "Spam"</strong> si vous ne le trouvez pas immédiatement.</p>
+                <a href="mailto:immilegalglobal@gmail.com" class="btn-email-support">Besoin d'aide ? Contactez le Support</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section section-spacing">
         <div class="container">
-            <h2><i class="fas fa-envelope-open-text"></i> Votre Pack Complet Est Dans Votre Boîte Email !</h2>
-            <div class="instructions-block">
-                <p>Votre accès au <strong>Guide Complet Immigration Canada | Édition 2025</strong> par ImmiLégal Global et à tous vos bonus exclusifs vient d'être envoyé à l'adresse email que vous avez fournie lors de votre achat.</p>
-                <p><strong>ACTION IMMÉDIATE TRÈS IMPORTANTE :</strong> Pour ne rien manquer et accéder tout de suite à votre guide, <strong>vérifiez votre boîte de réception PRINCIPALE</strong>. Si vous ne voyez pas l'email de "ImmiLégal Global" après quelques minutes, regardez dans :</p>
-                <ul>
-                    <li><i class="fas fa-folder"></i> Vos onglets <strong>"Promotions"</strong> ou "Social".</li>
-                    <li><i class="fas fa-ban"></i> Votre dossier <strong>"Spam"</strong>, "Courrier Indésirable" ou "Junk Mail".</li>
-                </ul>
-                <p>C'est crucial de vérifier ces dossiers, car les emails contenant des liens peuvent parfois y être classés. Si vous trouvez notre email, marquez-le comme "Non-spam" et ajoutez notre adresse à vos contacts pour ne plus avoir ce problème.</p>
-                <p>L'email est déjà parti !".</p>
-                <p class="text-center">
-                    <a href="mailto:immilegalglobal@gmail.com" class="email-link">Pas d'email après 10 min ? Contactez-nous ici.</a>
-                </p>
+            <h2>Questions fréquentes après l'achat</h2>
+            <div class="faq-list">
+
+                <div class="faq-item">
+                    <div class="faq-question-header">
+                        <span>Je n'ai pas reçu l'e-mail de confirmation/d'accès, que faire ?</span>
+                        <i class="fas fa-plus icon"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>Il est possible que l'e-mail ait été classé comme promotionnel ou indésirable. Vérifiez attentivement vos dossiers <strong>"Promotions"</strong>, <strong>"Social"</strong> ou <strong>"Spam"</strong> (courrier indésirable).</p>
+                        <p>Si après 10 minutes vous ne trouvez toujours rien, merci de contacter notre support client à <a href="mailto:immilegalglobal@gmail.com">immilegalglobal@gmail.com</a> en mentionnant l'adresse email utilisée pour votre commande et la date d'achat. Nous vous aiderons rapidement.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question-header">
+                        <span>Comment accéder à mes bonus exclusifs ?</span>
+                        <i class="fas fa-plus icon"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>Vos bonus sont inclus dans le même e-mail d'accès au Guide Complet. Ils sont généralement présentés sous forme de liens de téléchargement ou d'instructions spécifiques au sein de cet e-mail. Assurez-vous d'avoir ouvert l'e-mail principal et de suivre toutes les indications.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question-header">
+                        <span>Comment rejoindre le groupe privé d'entraide ?</span>
+                        <i class="fas fa-plus icon"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>Les instructions pour rejoindre notre groupe privé d'entraide sont détaillées dans l'e-mail d'accès que vous avez reçu. Il contient un lien exclusif et les étapes pour valider votre adhésion. Nous sommes impatients de vous y retrouver !</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question-header">
+                        <span>Quand recevrai-je les mises à jour gratuites à vie ?</span>
+                        <i class="fas fa-plus icon"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>Nous vous enverrons automatiquement les mises à jour du guide par e-mail dès qu'elles seront disponibles. Celles-ci interviendront au fur et à mesure des changements importants dans les politiques d'immigration. Assurez-vous que nos e-mails ne tombent pas dans vos spams pour ne rien manquer !</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question-header">
+                        <span>Puis-je télécharger le guide sur plusieurs appareils ?</span>
+                        <i class="fas fa-plus icon"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>Oui, le Guide Complet est un fichier PDF que vous pouvez télécharger et consulter sur tous vos appareils personnels (ordinateur, tablette, smartphone) pour votre usage exclusif. Nous vous recommandons de le sauvegarder dans un endroit sûr.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question-header">
+                        <span>Comment puis-je contacter le support si j'ai d'autres questions ?</span>
+                        <i class="fas fa-plus icon"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>Pour toute question technique ou sur le contenu du guide, notre équipe de support est disponible pour vous aider. Vous pouvez nous contacter directement à l'adresse suivante : <a href="mailto:immilegalglobal@gmail.com">immilegalglobal@gmail.com</a>. Nous nous efforçons de répondre sous 24-48 heures ouvrées.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question-header">
+                        <span>Comment laisser un avis ou partager mon expérience ?</span>
+                        <i class="fas fa-plus icon"></i>
+                    </div>
+                    <div class="faq-answer-content">
+                        <p>Nous serions ravis de connaître votre avis ! Un lien pour laisser un témoignage ou un commentaire vous sera envoyé ultérieurement par email. Votre retour est précieux et aide d'autres futurs immigrants à prendre la bonne décision.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -535,16 +782,32 @@
         </div>
     </section>
 
+    <section class="next-steps-section section-spacing">
+        <div class="container">
+            <h3>Commencez Votre Aventure Sans Attendre !</h3>
+            <p>Voici les premières étapes pour tirer le maximum de votre Pack Complet ImmiLégal Global :</p>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <i class="fas fa-inbox step-icon"></i>
+                    <h4>1. Vérifiez Votre Email</h4>
+                    <p>Votre guide et tous vos accès sont déjà dans votre boîte de réception. N'oubliez pas les spams !</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-file-pdf step-icon"></i>
+                    <h4>2. Plongez Dans le Guide</h4>
+                    <p>Commencez par le chapitre d'introduction pour bien comprendre la structure et les fondamentaux.</p>
+                </div>
+                <div class="step-item">
+                    <i class="fas fa-comments step-icon"></i>
+                    <h4>3. Rejoignez la Communauté</h4>
+                    <p>Activez votre accès au groupe privé pour échanger avec d'autres aspirants et obtenir du soutien.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="new-footer" id="footer">
         <div class="container">
-            <div class="disclaimer-block">
-                <p>
-                    <strong>Information importante :</strong> Le Guide Complet Immigration Canada par ImmiLégal Global vous fournit des informations et des outils basés sur les sources officielles pour éclairer et structurer votre projet. Pour votre clarté, notez que ce guide n'offre pas de conseil personnalisé et ne peut garantir l'obtention d'un visa ou d'un emploi. Le succès de votre démarche dépend de nombreux facteurs et des autorités canadiennes.
-                </p>
-                <p style="margin-top: 5px;">
-                    Ce site et son contenu ne sont pas affiliés à Facebook, Instagram ou Meta Platforms Inc.
-                </p>
-            </div>
             <p class="copyright-block">&copy; <span id="current-year-footer"></span> ImmiLégal Global. Tous droits réservés.</p>
             <div class="footer-links">
                 <a href="https://conditions-g-n-rales-de-vente-cgv.onrender.com">Conditions Générales de Vente</a> |
@@ -562,140 +825,147 @@
             duration: 800, // Durée animation en ms
             once: true // Animation une seule fois au défilement
         });
-    </script>
 
-    <script>
-        // Met à jour l'année dans le footer
-        const yearSpanFooter = document.getElementById('current-year-footer');
-        if (yearSpanFooter) {
-            yearSpanFooter.textContent = new Date().getFullYear();
-        } else {
-            console.warn("Element with ID 'current-year-footer' not found. Check footer HTML ID.");
+        // Script pour l'année dans le footer
+        const yearElementFooter = document.getElementById('current-year-footer');
+        if (yearElementFooter) {
+            yearElementFooter.textContent = new Date().getFullYear();
         }
 
-        // Si tu as aussi un élément avec l'ID 'current-year', tu peux le mettre à jour ici aussi si besoin,
-        // mais idéalement n'aie qu'un seul élément pour l'année du footer.
-        const yearSpanGeneric = document.getElementById('current-year');
-        if (yearSpanGeneric && yearSpanGeneric !== yearSpanFooter) { // Évite de mettre à jour deux
-            yearSpanGeneric.textContent = new Date().getFullYear();
-        } else if (!yearSpanGeneric) {
-            console.warn("Element with ID 'current-year' not found.");
-        }
-    </script>
-    <script>
-        // Smooth scrolling pour les liens ancres (ex: #pricing)
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                try {
-                    const targetElement = document.querySelector(this.getAttribute('href'));
-                    if (targetElement) {
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth'
-                        });
-                    } else {
-                        console.warn('Smooth scroll target not found for href:', this.getAttribute('href'));
+        // ===============================================
+        // JavaScript pour l'accordéon FAQ (NOUVEAU)
+        // ===============================================
+        document.querySelectorAll('.faq-question-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const faqItem = header.closest('.faq-item');
+                const answerContent = faqItem.querySelector('.faq-answer-content');
+                const icon = header.querySelector('.icon');
+
+                // Fermer les autres FAQ ouvertes (optionnel mais souvent préféré)
+                document.querySelectorAll('.faq-answer-content.open').forEach(openAnswer => {
+                    if (openAnswer !== answerContent) {
+                        openAnswer.classList.remove('open');
+                        openAnswer.style.maxHeight = '0';
+                        openAnswer.previousElementSibling.classList.remove('active');
+                        openAnswer.previousElementSibling.querySelector('.icon').classList.remove('active');
                     }
-                } catch (error) {
-                    console.error('Error during smooth scroll:', error);
+                });
+
+                // Ouvrir ou fermer la FAQ cliquée
+                if (answerContent.classList.contains('open')) {
+                    answerContent.classList.remove('open');
+                    answerContent.style.maxHeight = '0';
+                    header.classList.remove('active');
+                    icon.classList.remove('active');
+                } else {
+                    answerContent.classList.add('open');
+                    // Définir une hauteur maximale suffisamment grande pour contenir le contenu
+                    answerContent.style.maxHeight = answerContent.scrollHeight + "px";
+                    header.classList.add('active');
+                    icon.classList.add('active');
                 }
             });
         });
     </script>
-    <script>
-        if (typeof gtag === 'function') {
-            // --- 1. Suivi du défilement (Scroll Depth) AVEC sessionStorage ---
-            const scrollThresholds = [20, 40, 60, 80, 100]; // Paliers de défilement à suivre
-            window.addEventListener('scroll', () => {
-                const scrollableHeight = document.documentElement.scrollHeight -
-                    document.documentElement.clientHeight;
-                if (scrollableHeight <= 0) return;
-                const scrolled = window.scrollY;
-                const scrollPercentage = Math.round((scrolled / scrollableHeight) * 100);
-                scrollThresholds.forEach(threshold => {
-                    const flagName = `scroll_depth_${threshold}_sent`;
-                    // Vérifier si on a dépassé le seuil ET que l'événement n'a pas déjà été envoyé pour ce seuil
-                    // dans cette session
-                    if (scrollPercentage >= threshold && !sessionStorage.getItem(flagName)) {
-                        gtag('event', 'scroll_depth', {
-                            'event_category': 'Engagement',
-                            'event_label': `${threshold}%`
-                        });
-                        // Marquer comme envoyé pour cette session
-                        try {
-                            sessionStorage.setItem(flagName, 'true');
-                            // console.log(`Scroll depth ${threshold}% event sent and flagged.`);
-                        } catch (e) { console.error('Error setting sessionStorage for scroll depth:', e); }
-                    }
-                });
-            }, { passive: true }); // Utiliser un écouteur passif pour la performance
+<script>
+    // --- Google Analytics 4 - Événement d'achat (AVEC VÉRIFICATION D'URL ET PROTECTION ANTI-DOUBLE DÉCLENCHEMENT) ---
 
-            // --- 2. Suivi de la visibilité des sections clés AVEC sessionStorage ---
-            document.addEventListener('DOMContentLoaded', (event) => {
-                const observerOptions = { root: null, rootMargin: '0px', threshold: 0.5 }; // Déclenche à 50% de
-                // visibilité
-                const sectionsToTrack = [ // Assurez-vous que ces ID existent sur vos sections HTML
-                    'thank-you-header', 'email-access-section', 'key-benefits-section', 'footer'
-                ];
-                sectionsToTrack.forEach(sectionId => {
-                    const sectionElement = document.getElementById(sectionId);
-                    if (sectionElement) {
-                        const observer = new IntersectionObserver((entries, observerInstance) => {
-                            entries.forEach(entry => {
-                                if (entry.isIntersecting) {
-                                    const flagName = `viewed_${sectionId}_sent`;
-                                    // Vérifier si la section n'a pas déjà été marquée comme vue dans cette session
-                                    if (!sessionStorage.getItem(flagName)) {
-                                        gtag('event', 'section_view', {
-                                            'event_category': 'Engagement',
-                                            'event_label': 'Viewed: ' + sectionId
-                                        });
-                                        // Marquer comme vue pour cette session
-                                        try {
-                                            sessionStorage.setItem(flagName, 'true');
-                                            // console.log(`Section view event for ${sectionId} sent and flagged.`);
-                                        } catch (e) { console.error(`Error setting sessionStorage for section view
-                                            ${sectionId}:`, e); }
-                                        // Optionnel : Arrêter d'observer après la première vue (même si flag échoue)
-                                        // pour économiser ressources
-                                        observerInstance.unobserve(entry.target);
-                                    } else {
-                                        // Si déjà vue dans la session, juste arrêter d'observer
-                                        observerInstance.unobserve(entry.target);
-                                    }
-                                }
-                            });
-                        }, observerOptions);
-                        observer.observe(sectionElement);
-                    } else {
-                        console.warn('Section Tracking: ID "' + sectionId + '" not found.');
-                    }
-                });
-                // --- 3. Suivi des clics (Pas de sessionStorage ici, car un clic est une action unique) ---
-                document.body.addEventListener('click', function(e) {
-                    // Clic sur le lien email de contact
-                    if (e.target.matches('.email-access-section .email-link')) {
-                        gtag('event', 'clic_email_contact_thankyou', {
-                            'event_category': 'Contact',
-                            'event_label': 'Email Link Thank You Page',
-                            'value': e.target.href
-                        });
-                    }
-                    // Clic sur les liens du Footer (excluant les liens vides '#')
-                    else if (e.target.matches('footer a') && e.target.getAttribute('href') &&
-                        e.target.getAttribute('href') !== '#') {
-                        gtag('event', 'clic_lien_footer_thankyou', {
-                            'event_category': 'Navigation',
-                            'event_label': 'Footer Link Thank You Page: ' + e.target.textContent.trim(),
-                            'value': e.target.href
-                        });
-                    }
-                });
-            }); // Fin de DOMContentLoaded pour Observer et Clicks
-        } else {
-            console.error('GA4 gtag function not found. Ensure GA4 is loaded correctly in <head>.');
-        }
-    </script>
-</body>
+    // Votre ID de mesure GA4.
+    // Assurez-vous que cet ID correspond à celui déjà configuré dans votre balise gtag.js dans le <head>
+    const GA_MEASUREMENT_ID = 'G-NZDBJMMCWT'; 
+
+    // Informations sur l'achat
+    const purchaseValue = 5000; // Montant de l'achat en F CFA
+    const purchaseCurrency = 'XOF'; // Devise : Franc CFA Ouest-Africain
+
+    // Clé pour le localStorage pour s'assurer que l'événement n'est envoyé qu'une seule fois
+    // Note: La clé inclut maintenant le transactionId pour une déduplication plus précise
+    const ga4PurchaseEventSentKeyPrefix = 'ga4_purchase_event_sent_';
+
+    // Fonction pour récupérer les paramètres d'URL
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Récupération de l'ID de la transaction depuis l'URL
+    let transactionIdGA4 = getUrlParameter('purchase'); // Utilise le même paramètre 'purchase' que pour le pixel
+
+    // Construire la clé complète pour le localStorage
+    const ga4PurchaseEventSentKey = ga4PurchaseEventSentKeyPrefix + transactionIdGA4;
+
+    // Vérifie si l'ID de transaction est présent ET si l'événement n'a pas déjà été envoyé pour CETTE transaction
+    if (transactionIdGA4 && localStorage.getItem(ga4PurchaseEventSentKey) !== 'true') {
+        // Envoie l'événement d'achat à Google Analytics
+        gtag('event', 'purchase', {
+            transaction_id: transactionIdGA4, // Utilise l'ID de la transaction de l'URL
+            value: purchaseValue,
+            currency: purchaseCurrency,
+            items: [{
+                item_id: 'IMMIGUIDE_2025', // ID unique de votre produit
+                item_name: 'Guide ImmiLégal Global 2025', // Nom du produit
+                price: purchaseValue,
+                quantity: 1
+            }]
+        });
+
+        // Marque l'événement comme envoyé dans le localStorage pour cette transaction spécifique
+        localStorage.setItem(ga4PurchaseEventSentKey, 'true');
+        console.log('GA4 Purchase event sent for transaction ID:', transactionIdGA4 + ' and marked in localStorage.');
+    } else if (transactionIdGA4 && localStorage.getItem(ga4PurchaseEventSentKey) === 'true') {
+        console.log('GA4 Purchase event already sent for this transaction ID (' + transactionIdGA4 + ') from localStorage. Event not re-sent.');
+    }
+    else {
+        console.warn('GA4 Purchase: Transaction ID missing from URL. Purchase event not fired.');
+    }
+
+</script>
+
+<script>
+    // --- Meta (Facebook) Pixel - Événement d'achat (AVEC PROTECTION ANTI-DOUBLE DÉCLENCHEMENT) ---
+
+    // Fonction pour récupérer les paramètres d'URL
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Récupération de l'ID de la transaction depuis l'URL
+    let transactionId = getUrlParameter('purchase'); // 'purchase' est le nom du paramètre dans l'URL
+
+    // Clé pour le localStorage pour s'assurer que l'événement n'est envoyé qu'une seule fois
+    // Note: Utiliser une clé spécifique au pixel Meta pour éviter les conflits avec GA4
+    const metaPurchaseEventSentKey = 'meta_pixel_purchase_event_sent_' + transactionId;
+
+    // Les autres données (montant, devise, infos client) ne sont PAS dans l'URL
+    // Elles seront envoyées par le CAPI via Zapier, qui est la source fiable.
+
+    // Vérifie si un transactionId est présent ET si l'événement n'a pas déjà été envoyé pour CETTE transaction
+    if (transactionId && localStorage.getItem(metaPurchaseEventSentKey) !== 'true') {
+        fbq('track', 'Purchase', {
+            value: 0,          // Mettre 0 ou une valeur par défaut. La vraie valeur vient du CAPI.
+            currency: 'XOF',   // Mettre votre devise par défaut. La vraie devise vient du CAPI.
+            content_name: 'Canada Réussi – Le Guide Complet pour une Immigration', // Nom de votre produit
+            content_type: 'product',
+            num_items: 1,
+            event_id: transactionId, // CECI EST LA CLÉ : L'ID UNIQUE DE LA TRANSACTION EN CLAIR
+        });
+        
+        // Marque l'événement comme envoyé dans le localStorage pour cette transaction spécifique
+        localStorage.setItem(metaPurchaseEventSentKey, 'true');
+        console.log('Facebook Pixel Purchase event fired with ID:', transactionId + ' and marked in localStorage.');
+
+    } else if (transactionId && localStorage.getItem(metaPurchaseEventSentKey) === 'true') {
+        console.log('Facebook Pixel Purchase event already sent for this transaction ID (' + transactionId + ') from localStorage.');
+    }
+    else {
+        console.warn('Facebook Pixel Purchase: Transaction ID missing from URL. Event not fired.');
+    }
+</script>
+
+    </body>
 </html>
-
